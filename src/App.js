@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './App.scss'
 import AboutPhoto from './Components/Pictures/Face.jpeg'
 import Burger from './Components/Burger/Burger'
@@ -8,15 +8,17 @@ import { theme } from './theme';
 import Nav from './Components/Nav'
 import Footer from './Components/Footer'
 import Portfolio from './Components/Portfolio'
+import { useOnClickOutside } from './hooks';
 
 function App() {
-
+  const node = useRef();
+  useOnClickOutside(node, () => setOpen(false));
   const [open, setOpen] = useState(false);
   return (
     <ThemeProvider theme={theme}>
     <GlobalStyles />
     <div className="App">
-    <div>
+    <div ref={node}>
         <Burger open={open} setOpen={setOpen}/>
         <Nav open={open} setOpen={setOpen}/>
         </div>

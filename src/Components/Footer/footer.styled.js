@@ -21,8 +21,8 @@ export const StyleFooter= styled.footer`
        i{
         padding:10px;
         background-color:${({ theme }) => theme.darkPink};
-        width:35px;
-        height:20px;
+        width:40px;
+        height:40px;
         margin:0 auto;
         color:${({ theme }) => theme.darkGreen};
         border-radius: 10%;
