@@ -8,8 +8,8 @@ export const StylePortfolio = styled.span`
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
-    width:100vw;
+    // height: 100vh;
+    // width:100vw;
     margin: 2rem;
     h2{
         font-size: 60px;
@@ -32,6 +32,7 @@ export const StylePortfolio = styled.span`
     .item:hover{
         transform: scale(1.1);
         transition:.15s
+        opacity: 90%;
     }
     .app-name{
         font-size: 3rem;
@@ -46,9 +47,10 @@ export const StylePortfolio = styled.span`
     }
     a{
         margin: 1rem;
-        color: $pink;
+        color: ${({theme})=> theme.pink};
         font-size: 1.5rem;
     }
+   
 }
 
 .hidden{
