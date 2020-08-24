@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const StyleFooter= styled.footer`
 .footer{
+    position: relative;
     text-align: center;
     background-color: ${({ theme }) => theme.darkGreen};
     height: auto;
@@ -36,7 +37,7 @@ export const StyleFooter= styled.footer`
 @media only screen and (max-width: 768px) {
     .footer{
         z-index: 1;
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
 
 `;

@@ -27,7 +27,7 @@ flex-flow: column;
 text-align: center;
 justify-content: center;
 width: 300px;
-position: absolute;
+position: fixed;
 height: 100vh;
 transform: translateX(-100%);
 transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
