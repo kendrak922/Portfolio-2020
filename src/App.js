@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import './App.scss'
 import Burger from './Components/Burger/Burger'
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global';
@@ -10,6 +9,7 @@ import Portfolio from './Components/Portfolio'
 import AboutPhoto from './Components/Pictures/Face.jpeg'
 // import LandingPage from './Components/LandingPage'
 import { useOnClickOutside } from './hooks';
+import './App.scss'
 
 function App() {
   const node = useRef();

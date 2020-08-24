@@ -14,6 +14,12 @@ border: none;
 cursor: pointer;
 padding: 0;
 z-index: 10;
+@media only screen and (max-width: 768px) {
+  div{
+  margin: 0 auto;
+  
+ }
+ }
 &:focus {
   outline: none;
 }
@@ -41,5 +47,10 @@ div {
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+ div{
+  background: ${({theme}) => theme.pink} 
+ 
+}
+}
 `;

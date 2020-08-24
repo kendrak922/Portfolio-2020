@@ -33,5 +33,10 @@ export const StyleFooter= styled.footer`
        }
    }
 }
+@media only screen and (max-width: 768px) {
+    .footer{
+        z-index: 1;
+        margin-top: 15rem;
+    }
 
 `;
