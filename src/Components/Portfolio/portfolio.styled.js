@@ -2,14 +2,11 @@
 import styled from 'styled-components';
 
 
-export const StylePortfolio = styled.span`
+export const StylePortfolio = styled.div`
 .portfolio-container{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
-    // height: 100vh;
-    // width:100vw;
     margin: 2rem;
     h2{
         font-size: 60px;
@@ -22,6 +19,7 @@ export const StylePortfolio = styled.span`
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        text-align: center;
         background-color:${({theme})=> theme.darkGreen};
         box-shadow: 3px 3px 3px gray ;
         height: 250px;

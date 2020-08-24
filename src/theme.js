@@ -8,5 +8,5 @@ darkPink:'#EF5D60',
 
 
 primaryFont: `'IBM Plex Serif', serif`,
-secondaryFont: `'Yanone Kaffeesatz', sans-serif`,
+secondaryFont: `'Poppins', sans-serif`,
 }

@@ -31,7 +31,7 @@ p{
    text-align: center;
     .headline{
         font-size: 100px;
-        font-family:'Yanone Kaffeesatz', sans-serif;
+        font-family: 'Poppins', sans-serif;;
         background-color: $dark-green;
         height: 100%;
         width: 50%;
@@ -63,7 +63,6 @@ p{
         font-size: 60px;
         flex-basis: 100%;
         color: $dark-green;
-        // outline-color: $dark-green;
         margin-left: 5rem;
 
     }
@@ -101,7 +100,7 @@ p{
         .headline{
             font-size: 4rem;
             width: 100vw;
-            font-family:'Yanone Kaffeesatz', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: $dark-green;
             // flex-basis: 100%;
             display: flex;
@@ -130,14 +129,12 @@ p{
         }
         }
     #about-me{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
+
+    margin-top: 10rem;
          h2{
              font-size: 50px;
              flex-basis: 100%;
+             margin: 0 auto;
              text-align: center;
              color: $dark-green;
      
