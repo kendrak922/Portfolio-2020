@@ -31,7 +31,7 @@ position: fixed;
 height: 100vh;
 transform: translateX(-100%);
 transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
-
+z-index: 9;
 @media only screen and (max-width: 768px) {
    
 }
