@@ -10,32 +10,32 @@ return (
     <div className="item">
     <p className='app-name'>Volunteer App</p>
     <p className="hidden nav-description">This is a description of my very cool app</p>
-    <a href='https://github.com/kendrak922/sign-up.git' className='hidden'>Github</a>
-    <a href='https://github.com/kendrak922/sign-up' className='hidden'>App</a>
+    <a href='https://github.com/kendrak922/sign-up.git' target="_blank" rel="noopener noreferrer" className='hidden'>Github</a>
+    <a href='https://github.com/kendrak922/sign-up' target="_blank" rel="noopener noreferrer"className='hidden'>App</a>
     </div>
     <div className="item">
     <p className='app-name'>Volunteer App</p>
     <p className="hidden nav-description">This is a description of my very cool app</p>
-    <a href='https://github.com/kendrak922/sign-up.git' className='hidden'>Github</a>
-    <a href='https://github.com/kendrak922/sign-up' className='hidden'>App</a>
+    <a href='https://github.com/kendrak922/sign-up.git' target="_blank" rel="noopener noreferrer"className='hidden'>Github</a>
+    <a href='https://github.com/kendrak922/sign-up' target="_blank" rel="noopener noreferrer" className='hidden'>App</a>
     </div>
     <div className="item">
     <p className='app-name'>Volunteer App</p>
     <p className="hidden nav-description">This is a description of my very cool app</p>
-    <a href='https://github.com/kendrak922/sign-up.git' className='hidden'>Github</a>
-    <a href='https://github.com/kendrak922/sign-up' className='hidden'>App</a>
+    <a href='https://github.com/kendrak922/sign-up.git' target="_blank" rel="noopener noreferrer" className='hidden'>Github</a>
+    <a href='https://github.com/kendrak922/sign-up' target="_blank" rel="noopener noreferrer" className='hidden'>App</a>
     </div>
     <div className="item">
     <p className='app-name'>Volunteer App</p>
     <p className="hidden nav-description">This is a description of my very cool app</p>
-    <a href='https://github.com/kendrak922/sign-up.git' className='hidden'>Github</a>
-    <a href='https://github.com/kendrak922/sign-up' className='hidden'>App</a>
+    <a href='https://github.com/kendrak922/sign-up.git' target="_blank" rel="noopener noreferrer" className='hidden'>Github</a>
+    <a href='https://github.com/kendrak922/sign-up'target="_blank" rel="noopener noreferrer" className='hidden'>App</a>
     </div>
     <div className="item">
     <p className='app-name'>Volunteer App</p>
     <p className="hidden nav-description">This is a description of my very cool app</p>
-    <a href='https://github.com/kendrak922/sign-up.git' className='hidden'>Github</a>
-    <a href='https://github.com/kendrak922/sign-up' className='hidden'>App</a>
+    <a href='https://github.com/kendrak922/sign-up.git' target="_blank" rel="noopener noreferrer" className='hidden'>Github</a>
+    <a href='https://github.com/kendrak922/sign-up' target="_blank" rel="noopener noreferrer" className='hidden'>App</a>
     </div>
     </div>
     </StylePortfolio>
