@@ -12,6 +12,15 @@ export const StyleFooter= styled.footer`
     padding:10px;
     font-size:1.5rem;
 }
+.resume{
+    text-decoration: none;
+    background-color: ${({ theme }) => theme.darkPink};
+    color: ${({ theme }) => theme.darkGreen};
+    // border-radius: 10%;
+    padding:10px;
+    margin: 100px;
+    font-size: 1rem;
+}
 
 .social-media{
     align-self: center;
@@ -26,7 +35,7 @@ export const StyleFooter= styled.footer`
         height:40px;
         margin:0 auto;
         color:${({ theme }) => theme.darkGreen};
-        border-radius: 10%;
+        // border-radius: 10%;
        }
        i:hover{
            transform: scale(1.1);
