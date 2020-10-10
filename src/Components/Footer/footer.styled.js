@@ -21,7 +21,10 @@ export const StyleFooter= styled.footer`
     margin: 100px;
     font-size: 1rem;
 }
-
+resume:hover{
+    transform: scale(1.1);
+    transition:.15s;
+}
 .social-media{
     align-self: center;
 

@@ -17,6 +17,9 @@ h4{
 p{
     width: 25%
 }
+:nth-child(even){
+    color:$dark-green;   
+}
 }
 
 .welcome-pg{
@@ -128,6 +131,7 @@ p{
             width: 60%;
             margin: 0 auto;
         }
+
         }
     #about-me{
 
