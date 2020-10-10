@@ -53,5 +53,10 @@ resume:hover{
         z-index: 1;
         margin-top: 20rem;
     }
+    @media only screen and (max-width: 1280px) {
+        .footer{
+            z-index: 1;
+            margin-top: 20rem;
+        }
 
 `;
