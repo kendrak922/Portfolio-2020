@@ -9,17 +9,16 @@ export const StyleFooter= styled.footer`
     background-color: ${({ theme }) => theme.darkGreen};
     height: auto;
     color: ${({ theme }) => theme.pink};
-    padding:10px;
+    padding: 10px;
     font-size:1.5rem;
 }
 .resume{
-    text-decoration: none;
     background-color: ${({ theme }) => theme.darkPink};
     color: ${({ theme }) => theme.darkGreen};
-    // border-radius: 10%;
     padding:10px;
-    margin: 100px;
     font-size: 1rem;
+    margin-bottom: 10px;
+  
 }
 resume:hover{
     transform: scale(1.1);
@@ -27,10 +26,13 @@ resume:hover{
 }
 .social-media{
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
    .social-media-link{
        margin:5px;
-
        i{
         padding:10px;
         background-color:${({ theme }) => theme.darkPink};
