@@ -3,9 +3,9 @@ import Burger from './Components/Burger/Burger'
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './global';
 import { theme } from './theme';
-import Nav from './Components/Nav'
-import Footer from './Components/Footer'
-import Portfolio from './Components/Portfolio'
+import Nav from './Components/Nav/Nav'
+import Footer from './Components/Footer/Footer'
+import Portfolio from './Components/Portfolio/Portfolio'
 import AboutPhoto from './Components/Pictures/Face.jpeg'
 // import LandingPage from './Components/LandingPage'
 import { useOnClickOutside } from './hooks';
@@ -36,7 +36,7 @@ function App() {
                 <li>ENFP | Virgo | Optimist</li>
             </ul>
             <h4>Favorite Tools</h4>
-            <p>JavaScript, Node.js, jQuery, React.js, GIT, Github, MySQL, Firebase, HTML, CSS, APIs, JSON, AJAX </p>
+            <p>JavaScript, Node.js, jQuery, React.js, Github, MySQL, Firebase, HTML, CSS, APIs, JSON, AJAX, CSS Flexbox </p>
         </div>
         <div id='about-me'>
             <h2>A Little About Me</h2>
