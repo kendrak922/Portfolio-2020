@@ -2,10 +2,12 @@ import React from 'react';
 import {StyleFooter} from './footer.styled'
 import resume from '../Pictures/Resume.pdf'
 import Contact from '../Contact/Contact'
+import slant from './optimised.svg'
 
 const Footer = () => {
     return (
 <StyleFooter>
+    <img src={slant} alt='slant styling' />
     <div id='contact'className="footer">
     <p className="contact-title">- Get in Touch -</p>
     <Contact />

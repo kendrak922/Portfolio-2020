@@ -11,6 +11,13 @@ export const StyleFooter= styled.footer`
     color: ${({ theme }) => theme.pink};
     padding: 10px;
     font-size:1.5rem;
+    z-index: 2;
+    bottom: 0;
+}
+img{
+    width: 100%;
+    margin:0;
+    margin-bottom: -1rem;
 }
 .resume{
     background-color: ${({ theme }) => theme.darkPink};
@@ -49,14 +56,8 @@ resume:hover{
    }
 }
 @media only screen and (max-width: 768px) {
-    .footer{
-        z-index: 1;
-        margin-top: 20rem;
-    }
+   
     @media only screen and (max-width: 1280px) {
-        .footer{
-            z-index: 1;
-            margin-top: 20rem;
-        }
-
+    } 
+     
 `;

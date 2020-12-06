@@ -5,64 +5,48 @@ import styled from 'styled-components';
 export const StylePortfolio = styled.div`
 .portfolio-container{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 2rem;
+    flex-flow: column;
     h2{
-        font-size: 60px;
+        font-size: 4rem;
         color: ${({theme})=> theme.darkPink};
-        flex-basis: 100%;
         text-align: center;
+    }
+    img{
+        height: 25rem;
+        width: 40rem;
+        flex: 1;
     }
     .item{
         display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background-color:${({theme})=> theme.darkGreen};
-        box-shadow: 3px 3px 3px gray ;
-        height: 250px;
-        width: 350px;
+        flex-flow: column wrap;
         margin: 2rem;
-        border-radius: 1%;
     }
-    .item:hover{
-        transform: scale(1.1);
-        transition:.15s
-        opacity: 90%;
+    .aside{
+        flex: 2;
     }
+    // .item:hover{
+    //     transform: scale(1.1);
+    //     transition:.15s
+    //     opacity: 90%;
+    // }
     .app-name{
         font-size: 3rem;
-        color: ${({theme})=> theme.pink};
-        font-family: ${({theme})=> theme.primaryFont};
+        color: ${({theme})=> theme.darkPink};
+        font-family: ${({theme})=> theme.secondaryFont};
     }
-    .nav-description{
-        flex-basis: 100%;
+    .description{
         text-align: center;
         color: ${({theme})=> theme.darkPink};
-        font-size: 1.5rem;
+        font-size: 1rem;
+        width: 15rem;
+        font-family: ${({theme})=> theme.primaryFont};
     }
     a{
         margin: 1rem;
-        color: ${({theme})=> theme.pink};
+        color: ${({theme})=> theme.darkGreen};
         font-size: 1.5rem;
     }
    
-}
-
-.hidden{
-    display:none;
-}
-
-.item:hover{
-    .hidden{
-        display: block;  
-    }
-    .app-name{
-        display: none;
-    }
-
 }
 
 `;

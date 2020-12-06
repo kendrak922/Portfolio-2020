@@ -1,31 +1,32 @@
 import React from 'react';
+import {StyleForm} from './contact.styled'
 import emailjs from 'emailjs-com';
 
-const Contact = () =>{
-    function sendEmail(e){
+const Contact = () => {
+    function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_g1jtpsq','template_cqlr5gl', e.target, 'user_6VjKYgMy0qW7vtiWTm04W')
-        .then((result)=>{
-            console.log(result.text);
-    
-        }, (error) => {
-            console.log(error.text)
-        });
+        emailjs.sendForm('service_g1jtpsq', 'template_cqlr5gl', e.target, 'user_6VjKYgMy0qW7vtiWTm04W')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text)
+            });
+        e.target.reset()
     }
-    return(
-        <div className="contact-form" onSubmit={sendEmail}>
-        <label>Name: <br></br>
+    return (
+        <StyleForm className="contact-form" onSubmit={sendEmail} t>
+            <label>Name
         <input name="user_name" type="text" />
-        </label>
-        <label>Email:<br></br> 
+            </label>
+            <label>Email
         <input name="user_email" type="email" />
-        </label>
-        <label>Message: <br></br>
-        <textarea name="message"  />
-        </label>
-        <input type="submit" value="send" className="submit" /> 
-    </div>
+            </label>
+            <label>Message
+        <textarea name="message" rows="5" />
+            </label>
+            <input type="submit" value="send" className="submit" />
+        </StyleForm>
     )
 }
 
