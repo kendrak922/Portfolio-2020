@@ -27,5 +27,17 @@ input[type = submit]{
     font-size: 1.1rem;
     border: none;
   }
+//   @media only screen and (max-width: 320px) {
+//     input, textarea{
+//         margin: 0 auto;
+//         width: 10rem;
+// }
+    @media only screen and (max-width: 1280px) {
+        input, textarea{
+            margin: 1rem;
+            vertical-align: middle;
+            width: 15rem;
+        }
+    } 
 `;
 

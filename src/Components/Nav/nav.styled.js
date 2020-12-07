@@ -10,7 +10,7 @@ export const StyleNav= styled.nav`
     height: 100vh;
     display: inline;
     float: right;
-    opacity: 90%;
+
  
     a{
         color:${({theme})=> theme.pink};
