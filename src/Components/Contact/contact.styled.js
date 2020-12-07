@@ -25,6 +25,7 @@ input[type = submit]{
     color: ${({ theme }) => theme.darkGreen};
     width: 6rem;
     font-size: 1.1rem;
+    border: none;
   }
 `;
 

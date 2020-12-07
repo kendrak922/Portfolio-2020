@@ -73,8 +73,7 @@ p{
     img{
         height: 30rem;
         z-index: 2;
-        box-shadow: 3px 3px 3px gray ;
-       
+        box-shadow: 3px 3px 3px gray;
     }
     .box{
         background-color: $dark-pink;
@@ -82,6 +81,15 @@ p{
         width: 90%;
         z-index: 1;
         position: absolute;
+    }
+    .resume{
+        background-color: $dark-pink;
+        color: $pink;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 20%;
+        display: inline-block;
+        margin: 1rem;
     }
     .description{
         width: 30rem;
@@ -93,12 +101,8 @@ p{
         color: $dark-green;
         border: solid 1rem $pink;
         padding: 1rem;
+        text-align: center;
     }
-    .description::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
 }
 
 // =========== Responsive

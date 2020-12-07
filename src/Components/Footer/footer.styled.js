@@ -4,12 +4,13 @@ import styled from 'styled-components';
 
 export const StyleFooter= styled.footer`
 .footer{
-    position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: row wrap;
     background-color: ${({ theme }) => theme.darkGreen};
     height: auto;
     color: ${({ theme }) => theme.pink};
-    padding: 10px;
+    padding: 3rem;
     font-size:1.5rem;
     z-index: 2;
     bottom: 0;
@@ -19,26 +20,16 @@ img{
     margin:0;
     margin-bottom: -1rem;
 }
-.resume{
-    background-color: ${({ theme }) => theme.darkPink};
-    color: ${({ theme }) => theme.darkGreen};
-    padding:10px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  
-}
-resume:hover{
-    transform: scale(1.1);
-    transition:.15s;
-}
+
 .social-media{
-    align-self: center;
     display: flex;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    
-
+    vertical-align: baseline;
+    color: ${({ theme }) => theme.pink};
    .social-media-link{
+       display: inline-block;
        margin:5px;
        i{
         padding:10px;
@@ -47,7 +38,7 @@ resume:hover{
         height:40px;
         margin:0 auto;
         color:${({ theme }) => theme.darkGreen};
-        // border-radius: 10%;
+        border-radius: 100%;
        }
        i:hover{
            transform: scale(1.1);
