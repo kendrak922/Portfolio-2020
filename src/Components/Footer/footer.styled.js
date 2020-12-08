@@ -34,13 +34,15 @@ img{
     vertical-align: baseline;
     color: ${({ theme }) => theme.pink};
    .social-media-link{
-       i{
-     padding:.5rem;
+       img{
+         height: 1rem;
+         width: 1rem;
+        padding:.5rem;
         margin:0 auto;
         color:${({ theme }) => theme.darkPink};
         border-radius: 100%;
        }
-       i:hover{
+       img:hover{
            transform: scale(1.1);
            transition:.15s;
        }
