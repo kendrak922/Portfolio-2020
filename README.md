@@ -2,4 +2,4 @@
 
 
 ##technologies
-created by react and javascrupt
+Created using React.js, CSS, and Javascrupt

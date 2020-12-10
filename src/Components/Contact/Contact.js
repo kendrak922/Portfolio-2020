@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleForm} from './contact.styled'
 import emailjs from 'emailjs-com';
+import './contact.scss'
 
 const Contact = () => {
     function sendEmail(e) {
@@ -15,7 +15,7 @@ const Contact = () => {
         e.target.reset()
     }
     return (
-        <StyleForm className="contact-form" onSubmit={sendEmail} t>
+        <form className="contact-form form" onSubmit={sendEmail} >
             <label>Name
         <input name="user_name" type="text" />
             </label>
@@ -26,7 +26,7 @@ const Contact = () => {
         <textarea name="message" rows="5" />
             </label>
             <input type="submit" value="send" className="submit" />
-        </StyleForm>
+        </form>
     )
 }
 

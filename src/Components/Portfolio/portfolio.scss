@@ -1,0 +1,125 @@
+
+@import '../../App.scss';
+
+.portfolio-container{
+    h2{
+        font-size: 4rem;
+        color: $dark-pink;
+        font-family: $primary-font;
+        text-align: center;
+    }
+    .item{
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+        margin: 2rem;
+        justify-content:space-around ;
+        align-items: center;
+        height: 80vh;
+
+    }
+    .item:nth-child(odd){
+        .image-background{
+            background: $dark-pink;
+            margin-bottom: 10px;
+        }
+    }
+    img{
+        height: 30rem;
+        width: 40rem;
+        display: block;
+        box-shadow: 5px 3px 10px gray;
+    }
+    .image-background{
+        background: $gold;
+        padding: 4rem;
+        height: 30rem;
+        width: 40rem;
+        box-shadow: 5px 3px 10px gray;
+    }
+    .aside{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .app-name{
+        font-size: 3rem;
+        color: $dark-pink;
+        font-family: $secondary-font;
+        margin-bottom: 1rem;
+        border: 3px solid $dark-pink;
+        padding: 1rem;
+    }
+    .description{
+        text-align: center;
+        color: $dark-pink;
+        font-size: 1rem;
+        width: 15rem;
+        font-family: $primary-font;
+    }
+   
+    a{
+        margin: 1rem;
+        color: $dark-green;
+        font-size: 1.5rem;
+        position: relative;
+    }
+    a:hover{
+        cursor: pointer;
+    }
+    a::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left:0;
+       background-color: $dark-green;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out 0s;
+    }
+    a:hover::before{
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+   .portfolio-container{
+       display: flex;
+       flex-flow: column wrap;
+       .description{
+        font-size: 1.2rem;
+    }
+       .item{
+        height: auto;
+        width: 100vw;
+       margin: 0 auto;
+       margin-bottom: 200px;
+       position: relative;
+       .image-background{
+        padding: 1rem;
+         position: relative;
+         height: 15rem;
+         img{
+             display: block;
+             height: 15rem;
+             width: 20rem;
+             margin: 1rem;
+             background: none;
+    
+         }
+         item:nth-child(odd){
+            .image-background{
+                background: $dark-pink;
+                margin-bottom: 0px;
+            }
+       }
+    }
+    }}
+
+}   
+  

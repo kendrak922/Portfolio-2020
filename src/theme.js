@@ -4,7 +4,8 @@
 export const theme={
 darkGreen: '#16302B',
 pink: '#F8DFDB',
-darkPink:'#EF5D60',
+darkPink:'#56282D',
+gold: "#BC6C25",
 
 
 primaryFont: `'IBM Plex Serif', serif`,
