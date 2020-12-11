@@ -11,20 +11,43 @@ $secondary-font: 'IBM Plex Serif', serif;
 
 .stats{
 display: flex;
-justify-content: space-between;
+flex-flow: row;
+height: 100vh;
+justify-content: center;
+align-items: center;
 font-size: 1.5rem;
 color:$dark-pink;
 margin: 4rem;
-h4{
-    font-size: 2.5rem;
-    margin: 2rem;
+.left{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15rem 6rem;
+    ul{
+        color: $dark-green;
+    }
+    h4{
+        text-align: center;
+    }
 }
-p{
-    width: 25%
+.right{
+    font-family: $secondary-font;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    background-color: #16302B;
+    padding: 15rem 6rem;
+    h4, p{
+        color: $pink;
+    }
 }
-:nth-child(even){
-    color:$dark-green;   
-}
+// h4{
+//     font-size: 2.5rem;
+//     margin: 2rem;
+// }
+// :nth-child(even){
+//     color:$dark-green;   
+// }
 }
 
 .welcome-pg{
@@ -102,7 +125,7 @@ p{
 .resume{
     background: $pink;
     padding: 1rem;
-    border: 6px solid $dark-pink;
+    border: 3px solid $dark-pink;
     font-size: 1rem;
     margin-top: 1rem;
     color: $dark-pink;
@@ -150,7 +173,7 @@ p{
 
         }
     #about-me{
-    margin-top: 10rem;
+    margin-top: 2rem;
          h2{
              font-size: 50px;
              flex-basis: 100%;
@@ -169,7 +192,7 @@ p{
          }
          .description{
              width: 90%;
-             font-size: 2em;
+             font-size: 1.2em;
              height: auto;
              margin: 0 auto;
          }

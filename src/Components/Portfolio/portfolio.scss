@@ -13,10 +13,10 @@
         flex-flow: row wrap;
         text-align: center;
         margin: 2rem;
+        margin-bottom: 5rem;
         justify-content:space-around ;
         align-items: center;
-        height: 80vh;
-
+        overflow: visible;
     }
     .item:nth-child(odd){
         .image-background{
@@ -42,6 +42,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        margin: 2rem;
     }
     .app-name{
         font-size: 3rem;
@@ -85,24 +86,29 @@
         transform: scaleX(1);
     }
 }
-
+@media only screen and (max-width: 1000px) {
+    .portfolio-container{
+        // .item{
+        // flex-flow: column wrap;
+        // justify-content: center;;
+        // align-items: center;
+        // }
+    }
+}
 
 @media only screen and (max-width: 768px) {
    .portfolio-container{
-       display: flex;
-       flex-flow: column wrap;
        .description{
         font-size: 1.2rem;
     }
        .item{
-        height: auto;
-        width: 100vw;
+        // width: 100vw;
        margin: 0 auto;
        margin-bottom: 200px;
-       position: relative;
+    //    position: relative;
        .image-background{
         padding: 1rem;
-         position: relative;
+        //  position: relative;
          height: 15rem;
          img{
              display: block;

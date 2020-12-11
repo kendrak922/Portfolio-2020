@@ -27,7 +27,7 @@ z-index: 10;
 div {
   width: 2rem;
   height: 0.25rem;
-  background: ${({ theme, open }) => open ? theme.pink : theme.darkGreen};
+  background: ${({ theme, open }) => open ? theme.pink : theme.darkPink};
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
@@ -49,7 +49,7 @@ div {
 
 @media only screen and (max-width: 768px) {
  div{
-  background: ${({theme}) => theme.pink} 
+  background: ${({theme}) => theme.gold} 
  
 }
 }
