@@ -20,7 +20,7 @@
     }
     .item:nth-child(odd){
         .image-background{
-            background: $dark-pink;
+            background: $gold;
             margin-bottom: 10px;
         }
     }
@@ -31,7 +31,7 @@
         box-shadow: 5px 3px 10px gray;
     }
     .image-background{
-        background: $gold;
+        background: $dark-pink;
         padding: 4rem;
         height: 30rem;
         width: 40rem;
@@ -87,13 +87,7 @@
     }
 }
 @media only screen and (max-width: 1000px) {
-    .portfolio-container{
-        // .item{
-        // flex-flow: column wrap;
-        // justify-content: center;;
-        // align-items: center;
-        // }
-    }
+ 
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,7 +108,7 @@
              display: block;
              height: 15rem;
              width: 20rem;
-             margin: 1rem;
+             margin: 0 auto;
              background: none;
     
          }
