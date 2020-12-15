@@ -1,5 +1,5 @@
 
-@import '../../App.scss';
+@import '../../variables.scss';
 
 .portfolio-container{
     h2{
@@ -7,6 +7,7 @@
         color: $dark-pink;
         font-family: $primary-font;
         text-align: center;
+        margin:60px auto 0;
     }
     .item{
         display: flex;
@@ -65,6 +66,7 @@
         color: $dark-green;
         font-size: 1.5rem;
         position: relative;
+        display: inline-block;
     }
     a:hover{
         cursor: pointer;

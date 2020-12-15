@@ -1,6 +1,4 @@
-@import '../../App.scss';
-
-
+@import '../../variables.scss';
 
 form{
 display: flex;
@@ -15,6 +13,8 @@ input, textarea{
     margin: 1rem;
     vertical-align: middle;
     width: 20rem;
+    padding:10px;
+    font-family: 'Poppins';
 }
 input[type = submit]{
     background: $pink;

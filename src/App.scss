@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Poppins:wght@300&display=swap');
+@import './variables.scss';
 
-$dark-green: #16302B;
-$pink: #F8DFDB;
-$dark-pink:#56282D;
-$gold: #BC6C25;
-
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'IBM Plex Serif', serif;
-
+* { 
+    padding: 0; 
+    box-sizing: border-box; 
+    margin:0;
+}
 
 .stats{
 display: flex;
@@ -23,10 +20,9 @@ margin: 0;
 border-top:40px solid #16302B;
 border-bottom: 40px solid #16302B;
 .left{
-    height: 100vh;
     width: 50vw;
     margin: 0 auto;
-    padding: 15rem 6rem;
+    padding: 0 6rem;
     // border: 40px solid #16302B;
     ul{
         color: $dark-green;
@@ -35,14 +31,14 @@ border-bottom: 40px solid #16302B;
         text-align: center;
     }
 }
+
 .right{
     font-family: $secondary-font;
     text-align: center;
-    height: 100vh;
     width: 50vw;
     margin: 0;
     // border: 40px solid #16302B;
-    padding: 15rem 6rem;
+    padding:0 6rem;
     p{
         color: $dark-green;
     }
@@ -61,17 +57,32 @@ border-bottom: 40px solid #16302B;
     justify-content: center;
     align-items: center;
    text-align: center;
+
+   @media only screen and (max-width: 768px) {
+    flex-direction: column;
+   }
+
     .headline{
         font-size: 80px;
-        padding: 10px;
+        padding: 20px;
         font-family: $primary-font;
         background-color: $dark-green;
         height: 100%;
-        width: 50%;
+        flex-basis: 50%;
         display: flex;
-        margin-top: 0;
         align-items:center;
-    
+        line-height: 1.2;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 4rem;
+            width: 100vw;
+            justify-content: center;
+
+            // ------- Don't need these since you already have them -------
+            // background-color: $dark-green;
+            // display: flex;
+            // align-items:center;
+        }
     }
     .title{
         font-size: 40px;
@@ -83,7 +94,10 @@ border-bottom: 40px solid #16302B;
         display: flex;
         justify-content: center;
         align-items:center;
-            
+         
+        @media only screen and (max-width: 768px) {
+            flex-basis: 50%;
+        }
     }
 }
 
@@ -94,11 +108,10 @@ border-bottom: 40px solid #16302B;
    align-items: center;
    
     h2{
-        font-size: 5em;
+        font-size: 4em;
         flex-basis: 100%;
         color: $dark-green;
-        margin-left: 5rem;
-        margin-bottom: 5rem;
+        margin:60px auto 0 5rem;
 
     }
     img{
@@ -144,21 +157,6 @@ border-bottom: 40px solid #16302B;
 // =========== Responsive
 
 @media only screen and (max-width: 768px) {
-    .welcome-pg{
-      flex-direction: column;
-        .headline{
-            font-size: 4rem;
-            width: 100vw;
-            background-color: $dark-green;
-            display: flex;
-            align-items:center;
-            justify-content: center;
-        
-        }
-        .title{
-            flex-basis: 100%;
-        }
-    }
     .stats{
         display: flex;
         flex-flow: column wrap;
