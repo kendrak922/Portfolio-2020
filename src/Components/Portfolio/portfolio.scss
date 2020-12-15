@@ -7,7 +7,8 @@
         color: $dark-pink;
         font-family: $primary-font;
         text-align: center;
-        margin:60px auto 24px;
+        margin:60px auto;
+        line-height: 1.2;
     }
     .item{
         display: flex;
@@ -34,10 +35,10 @@
             top:-40px;
 
             @media only screen and (max-width: 768px) {
-                height:calc(100% + 20px);
-                width:calc(100% + 20px);
-                left:-10px;
-                top:-10px;
+                height: calc(100% + 20px);
+                width: calc(100vw + 10px);
+                top: -20px;
+                left: -2rem;
             }
         }
     }
@@ -86,6 +87,10 @@
         margin-bottom: 1rem;
         border: 3px solid $dark-pink;
         padding: 1rem;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 1rem;
+        }
     }
     .description{
         text-align: center;
