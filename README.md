@@ -1,5 +1,5 @@
 # Kendra Kyndberg's Portfolio
 
 
-##technologies
+##Technologies
 Created using React.js, CSS, and Javascrupt
