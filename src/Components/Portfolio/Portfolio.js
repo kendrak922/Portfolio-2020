@@ -9,9 +9,9 @@ const Portfolio = () => {
             <div id='portfolio' className='portfolio-container'>
                 <h2>Featured Projects</h2>
                 <div className="item">
-                <div className="image-background">
+                <a className="image-background" href="https://volunteer-dev-3ced0.web.app/app.html">
                     <img src={volunteerAppPic} alt='Volunteer App Screenshot' />
-                </div>
+                </a>
                     <div className="aside">
                         <p className='app-name'>Volunteer App</p>
                         <p className="description">This App was inspired by my volunteer work in the past. It is an easy to use sign-up tool for volunteers and organizers that focuses on privacy and accessibility.</p>
@@ -23,9 +23,9 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="item">
-                <div className="image-background">
+                <a className="image-background" href="https://get-together.netlify.app/">
                 <img src={getTogetherPic} alt='Volunteer App Screenshot' />
-            </div>
+            </a>
                     <div className="aside">
                         <p className='app-name'>Get Together</p>
                         <p className="description">Get Together is an app for the modern party planner. Its a way to generate meal ideas for a myriad of guest needs - or go rouge and completely ignore everyone.</p>

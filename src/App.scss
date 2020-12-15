@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Poppins:wght@300&display=swap');
+@import './variables.scss';
 
-$dark-green: #16302B;
-$pink: #F8DFDB;
-$dark-pink:#56282D;
-$gold: #BC6C25;
-
-$primary-font: 'Poppins', sans-serif;
-$secondary-font: 'IBM Plex Serif', serif;
-
+* { 
+    padding: 0; 
+    box-sizing: border-box; 
+    margin:0;
+}
 
 .stats{
 display: flex;
@@ -22,11 +19,11 @@ color:$dark-pink;
 margin: 0;
 border-top:40px solid #16302B;
 border-bottom: 40px solid #16302B;
+
 .left{
-    height: 100vh;
     width: 50vw;
     margin: 0 auto;
-    padding: 15rem 6rem;
+    padding: 0 6rem;
     // border: 40px solid #16302B;
     ul{
         color: $dark-green;
@@ -34,21 +31,30 @@ border-bottom: 40px solid #16302B;
     h2{
         text-align: center;
     }
+
+    @media only screen and (max-width: 768px) {
+       width :auto;
+       padding:0 24px 24px;
+    }
 }
+
 .right{
     font-family: $secondary-font;
     text-align: center;
-    height: 100vh;
     width: 50vw;
     margin: 0;
     // border: 40px solid #16302B;
-    padding: 15rem 6rem;
+    padding:0 6rem;
     p{
         color: $dark-green;
     }
     h2{
         font-family: $primary-font;
     }
+
+    @media only screen and (max-width: 768px) {
+        width :auto;
+     }
 }
 }
 
@@ -61,17 +67,32 @@ border-bottom: 40px solid #16302B;
     justify-content: center;
     align-items: center;
    text-align: center;
+
+   @media only screen and (max-width: 768px) {
+    flex-direction: column;
+   }
+
     .headline{
         font-size: 80px;
-        padding: 10px;
+        padding: 20px;
         font-family: $primary-font;
         background-color: $dark-green;
         height: 100%;
-        width: 50%;
+        flex-basis: 50%;
         display: flex;
-        margin-top: 0;
         align-items:center;
-    
+        line-height: 1.2;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 4rem;
+            width: 100vw;
+            justify-content: center;
+
+            // ------- Don't need these since you already have them -------
+            // background-color: $dark-green;
+            // display: flex;
+            // align-items:center;
+        }
     }
     .title{
         font-size: 40px;
@@ -83,7 +104,10 @@ border-bottom: 40px solid #16302B;
         display: flex;
         justify-content: center;
         align-items:center;
-            
+         
+        @media only screen and (max-width: 768px) {
+            flex-basis: 50%;
+        }
     }
 }
 
@@ -94,11 +118,10 @@ border-bottom: 40px solid #16302B;
    align-items: center;
    
     h2{
-        font-size: 5em;
+        font-size: 4em;
         flex-basis: 100%;
         color: $dark-green;
-        margin-left: 5rem;
-        margin-bottom: 5rem;
+        margin:60px auto 24px 5rem;
 
     }
     img{
@@ -116,7 +139,7 @@ border-bottom: 40px solid #16302B;
     .description{
         width: 30rem;
         height: auto;
-        margin: 1rem;
+        margin: 0;
         z-index: 2;
         font-family: $secondary-font;
         background-color: $pink;
@@ -144,21 +167,6 @@ border-bottom: 40px solid #16302B;
 // =========== Responsive
 
 @media only screen and (max-width: 768px) {
-    .welcome-pg{
-      flex-direction: column;
-        .headline{
-            font-size: 4rem;
-            width: 100vw;
-            background-color: $dark-green;
-            display: flex;
-            align-items:center;
-            justify-content: center;
-        
-        }
-        .title{
-            flex-basis: 100%;
-        }
-    }
     .stats{
         display: flex;
         flex-flow: column wrap;
@@ -166,20 +174,18 @@ border-bottom: 40px solid #16302B;
         font-size: 1.5rem;
         color:$dark-pink;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 3rem 1rem;
         height: auto;
         border-top: 15px solid $dark-green;
+        border-bottom: 15px solid $dark-green;
 
         .left{
-            padding: 0;
             border: none;
-            width: 100vw;
             height: auto;
         }
         .right{
             padding: 0;
             border: none;
-            width: 100vw;
             height: auto;
         }
         h4{
@@ -200,6 +206,7 @@ border-bottom: 40px solid #16302B;
              margin: 0 auto;
              text-align: center;
              color: $dark-green;
+             line-height: 1.2;
          }
          img{
              height: 30rem;
@@ -211,10 +218,11 @@ border-bottom: 40px solid #16302B;
             display: none;
          }
          .description{
-             width: 90%;
+             width: 95vw;
              font-size: 1.2em;
              height: auto;
              margin: 0 auto;
+             padding:0;
          }
      }
      
