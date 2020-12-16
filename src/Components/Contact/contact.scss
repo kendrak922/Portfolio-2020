@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import '../../variables.scss';
 
 
 
@@ -14,16 +14,24 @@ label{
 input, textarea{
     margin: 1rem;
     vertical-align: middle;
-    width: 20rem;
+    width: 15rem;
+    padding: 10px;
+    font-family: $primary-font;
+    @media only screen and (min-width: 1280px) {
+            width: 20rem; 
+    }
 }
 input[type = submit]{
     background: $pink;
     padding: .5rem;
-    // border: 4px solid $pink;
     color: $dark-green;
     width: 6rem;
     font-size: 1.1rem;
     border:none;
+    align-self:center;
+    @media only screen and (min-width: 1280px) {
+            align-self:flex-end;
+    }
   }
   input[type = submit]:hover{
     transform: scale(1.1);
@@ -31,24 +39,4 @@ input[type = submit]{
     cursor: pointer;
   }
 
- @media only screen and (max-width: 320px) {
-     input, textarea{
-        margin: 0 auto;
-         width: 10rem;
-}
-input[type = submit]{
-    align-self:center;
-}
 
- }
-    @media only screen and (max-width: 1280px) {
-        input, textarea{
-            margin: 1rem;
-            vertical-align: middle;
-            width: 15rem;
-        }
-        input[type = submit]{
-            align-self:center;
-    } 
-
-    }

@@ -26,14 +26,10 @@ function App() {
                     <Nav open={open} setOpen={setOpen} />
                 </div>
                 <div className="welcome-pg">
-                    <h1 className='headline'> Hi, I'm Kendra Kyndberg</h1>
-                    <p className='title'>Front-End Developer</p>
+                    <h1> Hi, I'm Kendra Kyndberg</h1>
+                    <p>Front-End Developer</p>
                 </div>
                 <Portfolio />
-                {/* {/* <img src={slant} alt="slant" 
-                stlyes={{
-            width: "100vh"
-                }} */}
                 <div className='stats'>
                     <div className='left'>
                         <h2>Quick Facts</h2>
@@ -56,7 +52,7 @@ function App() {
                     <div className="description">
                         <p>After graduating a coding bootcamp in 2018, I made it my mission to expand on the concepts I had learned particularly in Front-End development. As a liberal arts grad, I was initially drawn to the field of web development because I wanted to use technology to help people. I stayed because I found new thrilling ways to use creativity and critical thinking skills that enable me to remain in state of perpetual learning. When I am not coding, I am probably getting a drink(or a few) with friends, bouldering, experimenting in the kitchen, or reading a good book.
                     <br></br><br></br>I like to work on projects that are mission driven and solutions oriented. My code focuses on learning core concepts in-depth while prioritizing fast, simple programs that are not bogged down in unnecessary libraries or modules. Most of all I love talking about projects, learning technology, and encouraging others to explore the world of web development. </p>
-                        <button className="resume" href={resume} download>Download Resume</button>
+                        <a className="resume" href={resume} download>Download Resume</a>
                     </div>
                 </div>
                 <div></div>

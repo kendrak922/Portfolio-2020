@@ -27,11 +27,14 @@ z-index: 10;
 div {
   width: 2rem;
   height: 0.25rem;
-  background: ${({ theme, open }) => open ? theme.pink : theme.darkPink};
+  background: ${({ theme, open }) => open ? theme.pink : theme.gold};
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
   transform-origin: 1px;
+  @media only screen and (min-width: 768px) {
+    background: ${({ theme, open }) => open ? theme.pink : theme.darkPink}; 
+   }
   :first-child {
     transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
   }
@@ -47,10 +50,5 @@ div {
   }
 }
 
-@media only screen and (max-width: 768px) {
- div{
-  background: ${({theme}) => theme.gold} 
- 
-}
-}
+
 `;
