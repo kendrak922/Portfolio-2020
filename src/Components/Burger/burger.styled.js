@@ -33,7 +33,7 @@ div {
   position: relative;
   transform-origin: 1px;
   @media only screen and (min-width: 768px) {
-    background: ${({ theme, open }) => open ? theme.pink : theme.darkPink}; 
+    background: ${({ theme, open }) => open ? theme.pink : theme.maroon}; 
    }
   :first-child {
     transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};

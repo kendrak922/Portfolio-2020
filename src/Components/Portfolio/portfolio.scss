@@ -4,7 +4,7 @@
 .portfolio-container{
     h2{
         font-size: 4rem;
-        color: $dark-pink;
+        color: $maroon;
         font-family: $primary-font;
         text-align: center;
         line-height: 1.2;
@@ -35,7 +35,7 @@
         &:before{
             content:'';
             position: absolute;
-            background-color: $dark-pink;
+            background-color: $maroon;
             height:calc(100% + 20px);
             width:calc(100% + 20px);
             left:-10px;
@@ -71,7 +71,7 @@
         &:before{
             content: '';
             position: absolute;
-            background: $dark-pink;
+            background: $maroon;
             padding: 4rem;
             height: 30rem;
             width: 40rem;
@@ -96,10 +96,10 @@
     }
     .app-name{
         font-size: 3rem;
-        color: $dark-pink;
+        color: $maroon;
         font-family: $secondary-font;
         margin-top: 1rem;
-        border: 3px solid $dark-pink;
+        border: 3px solid $maroon;
         padding: 1rem;
         @media only screen and (min-width: 768px) {
             margin-bottom: 1rem;
@@ -107,7 +107,7 @@
     }
     .description{
         text-align: center;
-        color: $dark-pink;
+        color: $maroon;
         font-size: 1.2rem;
         width: 95vw;
         font-family: $primary-font;

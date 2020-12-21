@@ -40,7 +40,7 @@
     p{
         font-size: 40px;
         font-family: $secondary-font;
-        color: $dark-pink;
+        color: $maroon;
         height: 100%;
         flex-basis: 50%;
         background-color: $pink;
@@ -58,7 +58,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    color:$dark-pink;
+    color:$maroon;
     padding: 1rem;
     border-top: 9px solid #16302B;
     border-bottom: 9px solid #16302B;
@@ -117,10 +117,6 @@
    justify-content: space-around;
    align-items: center;
    margin-top: 2rem;
-//    @media only screen and (min-width: 768px){
-//    }
- 
-
     h2{
         font-size: 4rem;
         flex-basis: 100%;
@@ -138,7 +134,7 @@
         height: 30rem;
         z-index: 1;
         box-shadow: 3px 3px 10px gray;
-        border: solid 20px $dark-pink;
+        border: solid 20px $maroon;
         @media only screen and (min-width: 768px){
             z-index: 2;
             border: none;
@@ -179,10 +175,10 @@
     display: inline-block;
     background: $pink;
     padding: 1rem;
-    border: 3px solid $dark-pink;
+    border: 3px solid $maroon;
     font-size: 1rem;
     margin-top: 3rem;
-    color: $dark-pink;
+    color: $maroon;
     font-family: $primary-font;
  }
  .resume:hover{

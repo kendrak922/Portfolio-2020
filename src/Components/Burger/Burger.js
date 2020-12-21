@@ -6,7 +6,7 @@ import { bool, func } from 'prop-types';
 const Burger =({open, setOpen}) => {  
   
     return(
-        <StyledBurger aria-label="hamburger menu" open ={open} onClick = {()=> setOpen(!open)}>
+        <StyledBurger aria-label="hamburger button" tab-index= '1' role="button" open ={open} onClick = {()=> setOpen(!open)}>
    <div />
    <div />
    <div />

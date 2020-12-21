@@ -8,13 +8,12 @@ export const StyleNav= styled.nav`
 .nav-container{
     background-color: ${({theme})=> theme.darkGreen};
     height: 100vh;
-    // display: inline;
     float: right;
 
 }
 
 .nav{
-background-color: ${({theme})=> theme.darkPink};
+background-color: ${({theme})=> theme.maroon};
 padding: 1rem;
 display: flex;
 flex-flow: column;
@@ -31,9 +30,7 @@ a{
     text-decoration: none;
     position: relative;
 }
-// a:hover{
-//     border-bottom: solid 5px ${({theme})=> theme.pink};
-// }
+
 a:before{
     content: "";
     position: absolute;
