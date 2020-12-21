@@ -11,7 +11,7 @@
    2. Contact me and lets talk.
   
 ## Credits
- * social media icons were from fontawesome.
+ * Social media icons were from fontawesome.com.
  * My logo was made by my friend Kate Hemann.
  
 ## License 
