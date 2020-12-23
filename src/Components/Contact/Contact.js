@@ -15,7 +15,6 @@ const Contact = () => {
         e.target.reset()
     }
     return (
-        <div>
         <form className="contact-form form" onSubmit={sendEmail} >
             <label>Name
         <input htmlFor="name" name="user_name" type="text" />
@@ -28,7 +27,6 @@ const Contact = () => {
             </label>
             <input type="submit" value="send" className="submit" />
         </form>
-        </div>
     )
 }
 
