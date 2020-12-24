@@ -9,7 +9,7 @@ const Portfolio = () => {
             <div id='portfolio' className='portfolio-container'>
                 <h2>Featured Projects</h2>
                 <div className="item">
-                <a className="image-background" href="https://volunteer-dev-3ced0.web.app/app.html">
+                <a className="image-background" target="_blank" rel="noopener noreferrer" href="https://volunteer-dev-3ced0.web.app/app.html">
                     <img src={volunteerAppPic} alt='Volunteer App Screenshot' />
                 </a>
                     <div className="aside">
@@ -23,7 +23,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className="item">
-                <a className="image-background" href='https://get-together.netlify.app/'>
+                <a className="image-background" target="_blank" rel="noopener noreferrer" href='https://get-together.netlify.app/'>
                 <img src={getTogetherPic} alt='Volunteer App Screenshot' />
                 </a>
                     <div className="aside">
