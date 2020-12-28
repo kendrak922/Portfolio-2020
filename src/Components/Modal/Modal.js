@@ -1,22 +1,24 @@
-import React, {useState} from 'react'
-import './Modal.scss'
-const Modal = () => {
-let [show, setShow] = useState(false)
-const showModal = ()=>{
-    setShow(true);
-}
-const hideModal = ()=>{
-    setShow(false);
-}
-        return(
-            <div className="modal-container">
-               <h1>
-                   Thank you!
-                </h1> 
-                <p>I'll be in touch soon</p>
-                <button onClick={()=>hideModal}>Close</button>
-            </div>
-        )   
+import React, {useEffect, useRef} from 'react';
+import {createPortal} from 'react-dom';
+
+
+
+
+const Modal = ({children}) => {
+    const elRef = useRef(null)
+
+    if(!elRef.current){
+        const div = document.createElement('div')
+        elRef.current = div;
+    }
+
+    useEffect(() =>{
+        const modalRoot = document.getElementById('modal');
+        modalRoot.appendChild(elRef.current)
+        return () => modalRoot.removeChild(elRef.current)
+    },[]);
+        return createPortal(<div>{children}</div>, elRef.current)
+   
 }
 
 export default Modal;

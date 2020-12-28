@@ -38,5 +38,31 @@ input[type = submit]{
     transition:.15s;
     cursor: pointer;
   }
-
-
+  #modal{
+    margin : 0 auto;
+  }
+.modal{
+    z-index: 10;
+    background-color: $maroon;
+    color: $pink;
+    width: 40rem;
+    height: 20rem;
+    text-align: center;
+    font-size: 2em;
+    padding: 4rem;
+text-align: center;
+position: fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+    button{
+        display: inline-block;
+        background: $maroon;
+        padding: 1rem;
+        border: 3px solid $pink;
+        color: $pink;
+        font-size: 1rem;
+        margin: 1rem;
+        font-family: $primary-font;
+    }
+}
