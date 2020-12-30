@@ -1,15 +1,17 @@
-import React,{useState} from 'react';
+import React,{useState, useRef} from 'react';
 import emailjs from 'emailjs-com';
 import Modal from '../Modal/Modal'
 import './contact.scss'
+import { useOnClickOutside } from '../../hooks';
 
 const Contact = () => {
+ const node = useRef();
 let [showModal, setShowModal] = useState(false)
+useOnClickOutside(node, () => setShowModal(false));
+
 const toggleModal = () => {
     setShowModal(!showModal);
-    console.log(showModal)
 }
-
         function sendEmail(e) {
         e.preventDefault();
         emailjs.sendForm('service_g1jtpsq', 'template_cqlr5gl', e.target, 'user_6VjKYgMy0qW7vtiWTm04W')
@@ -35,6 +37,7 @@ const toggleModal = () => {
             <input type="submit" value="send" className="submit" onClick={toggleModal} />
             {
                 showModal ? (
+                    <div ref ={node}>
                     <Modal>
                     <div className="modal"> 
                       <h1>Thank you! </h1> 
@@ -42,6 +45,7 @@ const toggleModal = () => {
                      <button onClick={toggleModal} >Close</button>
                     </div>
                     </Modal>
+                    </div>
                 ) : null
             }
         </form>
