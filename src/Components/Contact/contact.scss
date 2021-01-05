@@ -64,5 +64,12 @@ transform: translate(-50%, -50%);
         font-size: 1rem;
         margin: 1rem;
         font-family: $primary-font;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+     transition:.15s;
+        }
     }
 }
+
+
