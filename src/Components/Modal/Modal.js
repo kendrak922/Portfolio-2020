@@ -21,4 +21,8 @@ const Modal = ({children}) => {
    
 }
 
+Modal.propTypes = {
+    children: bool.isRequired,
+}
+
 export default Modal;

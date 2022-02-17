@@ -131,11 +131,14 @@
     }
 
     img{
-        height: 30rem;
+        height: auto;
         z-index: 1;
         box-shadow: 3px 3px 10px gray;
         border: solid 20px $maroon;
+        width: 90%;
         @media only screen and (min-width: 768px){
+            height: 30rem;
+            width: auto;
             z-index: 2;
             border: none;
         }

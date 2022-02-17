@@ -40,7 +40,7 @@ function App() {
                     </div>
                     <div className="right">
                         <h2>My Favorite Tools</h2>
-                        <p>JavaScript, Node.js, jQuery, React.js, GIT, MySQL, Firebase, HTML5, CSS3, Sass, RESTful APIs, JSON, AJAX, Materialize and Bootstrap Frontend Frameworks, CSS Flexbox, CSS Grid
+                        <p>JavaScript, Node.js, jQuery, React.js ,React Hooks, Wordpress, BigCommerce, Shopify, GIT, MySQL, Firebase, HTML5, CSS3, Sass, RESTful APIs, JSON, AJAX, Materialize and Bootstrap, VWO, A/B Testing, BigCommerce Widget API, Salesforce Marketing Cloud, AMPScript, WP Elementor, Divi Builder and Lazy Blocks
 </p>
                     </div>
                 </div>
