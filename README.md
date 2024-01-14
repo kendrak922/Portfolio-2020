@@ -1,10 +1,6 @@
 # Kendra Kyndberg's Portfolio
 
 
-<<<<<<< HEAD
-## Technologies
-Created using React.js, CSS, and Javascript
-=======
 ## Technology
   * React.js
   * Javascript
@@ -21,4 +17,3 @@ Created using React.js, CSS, and Javascript
 ## License 
   Copyright (c) 2020 Kendra Kyndberg
 
->>>>>>> 10015146b8ccad79c2b2743c515b6d7c96d99f44

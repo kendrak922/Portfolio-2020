@@ -22,9 +22,9 @@ input, textarea{
     }
 }
 input[type = submit]{
-    background: $pink;
+    background: $color-charcoal;
     padding: .5rem;
-    color: $dark-green;
+    color: $color-blue-light;
     width: 6rem;
     font-size: 1.1rem;
     border:none;
@@ -43,8 +43,8 @@ input[type = submit]{
   }
 .modal{
     z-index: 10;
-    background-color: $maroon;
-    color: $pink;
+    background-color: $color-highlight-green;
+    color: $color-charcoal;
     width: 40rem;
     height: 20rem;
     text-align: center;
@@ -57,10 +57,10 @@ top: 50%;
 transform: translate(-50%, -50%);
     button{
         display: inline-block;
-        background: $maroon;
+        background: $color-highlight-green;
         padding: 1rem;
-        border: 3px solid $pink;
-        color: $pink;
+        border: 3px solid $color-charcoal;
+        color: $color-charcoal;
         font-size: 1rem;
         margin: 1rem;
         font-family: $primary-font;

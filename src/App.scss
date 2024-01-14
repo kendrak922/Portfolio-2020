@@ -10,40 +10,33 @@
 .welcome-pg{
     height: 100vh;
     width: 100vw;
-    color:$pink;
+    color:$color-blue-light;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
    text-align: center;
-   @media only screen and (min-width: 768px) {
-    flex-direction: row;
-   }
+  //  @media only screen and (min-width: 768px) {
+  //   flex-direction: row;
+  //  }
     h1{
         font-size: 4em;
         padding: 10px;
         font-family: $primary-font;
-        background-color: $dark-green;
-        width: 100vw;
-        flex-basis: 50%;
         display: flex;
         margin: 0 auto;
         align-items:center;
         line-height: 1.2;
         @media only screen and (min-width: 768px) {
             font-size: 5rem;
-            height: 100%;
-            
         }
     
     }
     p{
         font-size: 40px;
         font-family: $secondary-font;
-        color: $maroon;
-        height: 100%;
-        flex-basis: 50%;
-        background-color: $pink;
+        color: $color-highlight-green;
+        background-color: $color-charcoal;
         display: flex;
         justify-content: center;
         align-items:center;
@@ -58,16 +51,14 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    color:$maroon;
+    color:$color-highlight-green;
     padding: 1rem;
-    border-top: 9px solid #16302B;
-    border-bottom: 9px solid #16302B;
     .left{
         flex-basis: 50%;
         margin: 0 auto;
         padding:3rem 1rem;
         ul{
-            color: $dark-green;
+            color: $color-blue-light;
         }
         h2{
             text-align: center;
@@ -80,7 +71,7 @@
         margin: 0;
         padding:3rem 1rem;
         p{
-            color: $dark-green;
+            color: $color-blue-light;
         }
         h2{
             font-family: $primary-font;
@@ -111,7 +102,7 @@
      }
     }
 }
-#about-me{
+.about-me{
    display: flex;
    flex-flow: row wrap;
    justify-content: space-around;
@@ -120,7 +111,7 @@
     h2{
         font-size: 4rem;
         flex-basis: 100%;
-        color: $dark-green;
+        color: $color-blue-light;
         margin: 0 auto;
         line-height: 1.2;
         margin:60px auto;
@@ -134,7 +125,7 @@
         height: auto;
         z-index: 1;
         box-shadow: 3px 3px 10px gray;
-        border: solid 20px $maroon;
+        // border: solid 20px $color-highlight-green;
         width: 90%;
         @media only screen and (min-width: 768px){
             height: 30rem;
@@ -143,27 +134,15 @@
             border: none;
         }
     }
-    .box{
-        display: none;
-        @media only screen and (min-width: 768px){
-            display: block;
-            background-color: $gold;
-            height: 60%;
-            width: 90%;
-            z-index: 1;
-            position: absolute;
-            margin-top: 5rem;
-        }
-    }
     .description{
         width: 95vw;
         height: auto;
         margin: 0;
         z-index: 2;
         font-family: $secondary-font;
-        background-color: $pink;
-        color: $dark-green;
-        border: solid 1rem $pink;
+        background-color: $color-charcoal;
+        color: $color-blue-light;
+        border: solid 1rem $color-charcoal;
         padding: 0;
         text-align: center;
         font-size: 1.2em;
@@ -176,16 +155,19 @@
 }
 .resume{
     display: inline-block;
-    background: $pink;
+    background: $color-charcoal;
     padding: 1rem;
-    border: 3px solid $maroon;
+    border: 3px solid $color-highlight-green;
     font-size: 1rem;
     margin-top: 3rem;
-    color: $maroon;
+    color: $color-highlight-green;
     font-family: $primary-font;
+    &:hover{
+      transform: scale(1.1);
+      transition:.15s;
+      cursor: pointer;
+   }
  }
- .resume:hover{
-    transform: scale(1.1);
-    transition:.15s;
-    cursor: pointer;
- }
+
+
+ 
